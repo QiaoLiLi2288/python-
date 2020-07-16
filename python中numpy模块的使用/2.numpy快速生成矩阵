@@ -1,0 +1,3 @@
+# np.ones() np.zeros()
+# np.linspace(up, down, num) - 在 up ~ down 区间上生成等差数列
+# np.arange(n)
