@@ -1,0 +1,5 @@
+# np.concatenate -- 基于axis的数值进行矩阵拼接
+eg: a = np.array([[1,2], [3,4]]) b = np.array([[1,2], [3,4]]) 
+    c = np.concatenate(a, b, axis=0) 行拼接 [[1,2],[3,4],[1,2],[3,4]]
+
+# np.tile -- 对于整个数组进行复制拼接 np.tile(a, reps) 其中a为数组，reps=(m,n) 行的方向重复m次
