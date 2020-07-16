@@ -1,3 +1,5 @@
 # np.ones() np.zeros()
 # np.linspace(up, down, num) - 在 up ~ down 区间上生成等差数列
 # np.arange(n)
+# A = np.zeros_like(B) 生成shape形如B的0矩阵
+# np.full_like(A, val) 生成shape形如A，值为val的矩阵
