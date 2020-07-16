@@ -1,0 +1,5 @@
+# np.square(x) 平方运算
+# np.std(a, axis=0) 计算矩阵每一列的标准差
+# np.sum
+# np.exp
+# np.mean
