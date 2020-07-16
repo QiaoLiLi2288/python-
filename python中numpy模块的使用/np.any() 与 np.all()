@@ -1,0 +1,2 @@
+np.any() 判断指定的axis中是否存在True
+np.all() 判断指定的axis中是否全为True
