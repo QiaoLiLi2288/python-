@@ -2,3 +2,4 @@
 # np.random.normal(loc=, scale=,size=) 输入均值为loc 标准差为scale shape=size的高斯分布矩阵
 # np.random.rand(d0,d1,dn) （0，1）区间的随机数
 # np.random.randint(a, b) 前闭后开的区间 
+# np.random.seed 对随后的一次随机状态一致
