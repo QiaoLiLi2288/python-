@@ -1,1 +1,61 @@
+# glob 模块 依据通配符搜索文件
+eg:
+from glob import glob
+img_files = glob(r'D:\project data\mlt\image\10*.jpg') # 注意字符串前面加上 r
+for img_file in img_files:
+    print(img_file)
+result
+D:\project data\mlt\image\100_icdar13.jpg
+D:\project data\mlt\image\101_icdar13.jpg
+D:\project data\mlt\image\102_icdar13.jpg
+...
 
+# 其他常见用法：
+print(glob.glob(r’ . ./*’) ) # 上一级所有目录
+print(glob.glob(r’ ./*’) ) # 本级所有目录
+print(glob.glob(r’ C:/ * ') ) # C盘所有目录
+print(glob.glob(“C:/[PB][RO]”) ) # C盘所有包含pr/po/br/bo的目录
+print(glob.glob(“C://.txt”) ) # C盘两级目录所有的txt
+
+-----------------------------------------------
+import os
+os.walk() 方法用于通过在目录树中游走输出在目录中的文件名，向上或者向下。
+os.walk() 方法是一个简单易用的文件、目录遍历器，可以帮助我们高效的处理文件、目录方面的事情。
+
+for root, dirs, files in os.walk(".", topdown=False):
+    for name in files:
+        print(os.path.join(root, name))
+    for name in dirs:
+        print(os.path.join(root, name))
+result:
+./.bash_logout
+./amrood.tar.gz
+./.emacs
+./httpd.conf
+./www.tar.gz
+./mysql.tar.gz
+./test.py
+./.bashrc
+./.bash_history
+./.bash_profile
+./tmp
+./tmp/test.py
+
+os.path.split(name):分割文件名与目录（事实上，如果你完全使用目录，它也会将最后一个目录作为文件名而分离，同时它不会判断文件或目录是否存在）
+os.path.splitext():分离文件名和扩展名
+os.path.join(path,name):连接目录与文件名或目录
+os.path.basename(path):返回文件名
+os.path.dirname(path):返回文件路径
+os.path.isdir(name):判断name是不是目录，不是目录就返回false
+os.path.isfile(name):判断name这个文件是否存在，不存在返回false
+os.path.exists(name):判断是否存在文件或目录name
+os.path.split():返回一个路径的目录名和文件名
+os.path.isfile()和os.path.isdir()分别检验给出的路径是一个目录还是文件
+os.path.existe():检验给出的路径是否真的存在
+os.listdir(dirname):列出dirname下的目录和文件
+os.getcwd():获得当前工作目录
+os.curdir:返回当前目录（'.'）
+os.getcwd:得到当前工作目录，即当前python脚本工作的目录路径。
+os.getenv()和os.putenv:分别用来读取和设置环境变量
+os.listdir():返回指定目录下的所有文件和目录名
+os.remove(file):删除一个文件
