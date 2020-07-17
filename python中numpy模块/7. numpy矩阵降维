@@ -1,0 +1,17 @@
+# np.squeeze 去除shape中的一维分量
+eg:
+a = np.array([1, 2, 3])
+print(a.shape) # (3,)
+print(a * a)   # [1 4 9]
+print(a.shape) # (3,)
+
+a = np.array([[1], [2], [3]])
+print(a.shape)    # (3, 1)
+print(a * a)  
+# [[1]
+#  [4]
+#  [9]]
+b = a.squeeze()
+print(b)       # [1 2 3]
+print(b * b)   # [1 4 9]
+print(b.shape) # (3,)
