@@ -3,3 +3,6 @@
 # np.sum
 # np.exp
 # np.mean
+# np.log10 np.log np.log2
+# math.floor() 下舍整数 math.floor(-45.67)  --> -46
+# math.log(x, base)
