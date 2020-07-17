@@ -1,0 +1,3 @@
+# np.random.randn(d0, d1, dn) 返回服从标准正太分布的矩阵
+# np.random.normal(loc=, scale=,size=) 输入均值为loc 标准差为scale shape=size的高斯分布矩阵
+# np.random.rand(d0,d1,dn) （0，1）区间的随机数
