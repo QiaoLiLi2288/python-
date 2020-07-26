@@ -1,0 +1,12 @@
+from math import radians, copysign, sqrt, pow, pi
+# radians －－ randians(10) ->计算弧度
+
+copysign(x,y)
+把y的符号给x，y可以是0
+
+>>> math.copysign(12, -0.0)
+-12.0
+>>> math.copysign(-27, 29)
+27.0
+
+https://www.cnblogs.com/MingleYuan/p/10628503.html
