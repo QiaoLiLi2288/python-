@@ -1,0 +1,4 @@
+1. 基础的 unique 数字, 并排序返回
+2. 添加 axis=0, 就可以 unique 一个 row (即 tuple)
+3. 可以 return_counts 进行计数
+4. 添加 return_inverse=True, 可以将 array 中的每个元素转换为它在 unique 排序中的 index, 这样就可以很方便的使用这个 index array 达到高效的映射
